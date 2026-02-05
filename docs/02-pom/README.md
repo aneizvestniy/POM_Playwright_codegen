@@ -37,4 +37,5 @@ POM має сенс, коли:
 ## Дивись також
 
 - Приклади: `docs/02-pom/examples/`
+- Web приклади: `docs/02-pom/examples/web/`
 - Вправи: `docs/02-pom/exercises/exercises.md`

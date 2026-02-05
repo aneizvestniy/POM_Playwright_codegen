@@ -40,4 +40,5 @@ npx playwright codegen https://demo.playwright.dev/todomvc
 ## Дивись також
 
 - Приклади: `docs/01-codegen/examples/`
+- Web приклади: `docs/01-codegen/examples/web/`
 - Вправи: `docs/01-codegen/exercises/exercises.md`

@@ -1,6 +1,6 @@
 # Вправи — 01 Codegen
 
-## Вправа 1 — Запис і рефакторинг
+## Вправа 1 — Запис і рефакторинг (TodoMVC)
 
 1) Запусти:
 ```bash
@@ -17,10 +17,21 @@ npx playwright codegen https://demo.playwright.dev/todomvc
 - зроби локатори семантичними (`getByRole`, `getByLabel`)
 - додай 2 assert-и через `expect`
 
-## Вправа 2 — Локатори
+## Вправа 2 — "Codegen → POM"
 
-Запиши ще раз, але:
-- порівняй локатори від codegen
-- заміни 2 найгірші локатори на стабільніші
+Візьми записаний тест і зроби мінімальний POM:
+- `BasePage`
+- `TodoPage` (actions: `addTodo`, `toggleTodo`, `expectItemsLeft`)
 
-> Порада: додай `data-testid` у власному демо-проєкті (якщо є доступ) або використай role/label.
+Критерій: тест читається як сценарій, без селекторів.
+
+## Вправа 3 — Web (DemoQA)
+
+1) Запиши через codegen сценарій для:
+- https://demoqa.com/text-box
+
+2) Замінити 2 локатори на стабільніші:
+- `getByRole('button', { name: 'Submit' })`
+- `getByLabel(...)` (якщо працює)
+
+> Познач цей тест тегом `@web`, якщо додаєш його у framework.
