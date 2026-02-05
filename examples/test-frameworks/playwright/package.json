@@ -1,0 +1,16 @@
+{
+  "name": "playwright-training-framework",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test --grep-invert @web",
+    "test:ui": "playwright test --grep-invert @web --ui",
+    "test:headed": "playwright test --grep-invert @web --headed",
+    "test:update-snapshots": "playwright test --grep-invert @web --update-snapshots",
+    "test:web": "playwright test --grep @web"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0"
+  }
+}
